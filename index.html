@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="a web for show about so much cup cakes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cup Cake</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="responsive.css" /> -->
+    <link rel="icon" type="image/x-icon" href="images/icon.jpeg" />
+  </head>
+
+  <body>
+    <!-- Respnsive Navigation Bar -->
+    <div class="header">
+      <img src="images/icon-cupcake.png" alt="Icon Cup Cakes" class="logo" />
+      <div class="header-right">
+        <a href="#home">Home</a>
+        <a href="#cupcakes">Cupcakes</a>
+        <a href="#testimonial">Testimonial</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="top-header">
+      <img
+        src="images/cupcake-header.jpg"
+        alt="Icon Cup Cakes"
+        class="cake-header"
+      />
+      <div class="centered">Her Cupcake</div>
+    </div>
+
+    <!-- Responsive  Grid -->
+    <h1>Choose You Fav Cupcake Here</h1>
+    <div id="cupcakes">
+      <div class="row">
+        <div class="column">
+          <img src="images/cake1.jpg" />
+          <img src="images/cake2.jpg" />
+          <!-- <img src="images/cake3.jpg"> -->
+          <!-- <img src="images/cake4.jpg"> -->
+          <!-- <img src="images/cake5.jpg"> -->
+          <!-- <img src="images/cake6.jpeg"> -->
+          <img src="images/cake7.jpeg" />
+        </div>
+        <div class="column">
+          <img src="images/cake2.jpg" />
+          <img src="images/cake1.jpg" />
+          <img src="images/cake3.jpg" />
+          <!-- <img src="images/cake5.jpg"> -->
+          <!-- <img src="images/cake7.jpeg"> -->
+          <!-- <img src="images/cake4.jpg"> -->
+          <img src="images/cake6.jpeg" />
+        </div>
+        <div class="column">
+          <img src="images/cake1.jpg" />
+          <img src="images/cake2.jpg" />
+          <!-- <img src="images/cake3.jpg"> -->
+          <!-- <img src="images/cake4.jpg"> -->
+          <!-- <img src="images/cake5.jpg"> -->
+          <!-- <img src="images/cake6.jpeg"> -->
+          <img src="images/cake7.jpeg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Testimonial -->
+    <div id="testimonial">
+      <h1>What They Say About Us</h1>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="images/male.png" />
+            <h4>Bailey</h4>
+            <p>I love her cupcake so much</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="images/female.png" />
+            <h4>Zoe</h4>
+            <p>I love te texture of the cupcake</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="images/male2.png" />
+            <h4>Mailes</h4>
+            <p>I and my kids are love it</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="images/female2.png" />
+            <h4>Frey</h4>
+            <p>I love the red velvet one</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Process of Making Cupcake -->
+    <div id="video">
+      <h1>Behind The Scene of Making Cupcake</h1>
+      <iframe
+        class="video"
+        width="420"
+        height="315"
+        src="https://www.youtube.com/embed/oC6x6y_o80Y?si=BjPxrMXmln8HDfei"
+      ></iframe>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div style="text-align: center">
+          <h1>Contact Us</h1>
+          <p>Join our cupcake baked class</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="images/cake3.jpg" style="width: 100%" />
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Bandung</option>
+                <option value="canada">Yogyakarta</option>
+                <option value="usa">Jakarta</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 170px"
+              ></textarea>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
