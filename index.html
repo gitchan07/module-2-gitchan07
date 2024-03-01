@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cup Cake</title>
     <link rel="stylesheet" href="style.css" />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href="responsive.css" /> -->
@@ -29,78 +35,123 @@
 
     <!-- Header -->
     <div class="top-header">
-      <img
+      <!-- <img
         src="images/cupcake-header.jpg"
         alt="Icon Cup Cakes"
         class="cake-header"
-      />
+      /> -->
+      <picture class="cake-header">
+        <source media="(min-width:650px)" srcset="images/cake1.jpg" />
+        <source media="(min-width:465px)" srcset="images/cake4.jpg" />
+        <source media="(max-width:1024px)" srcset="images/cake3.jpg" />
+        <img src="images/cakeeeee.jpg" alt="Cupcake" style="width: auto" />
+      </picture>
       <div class="centered">Her Cupcake</div>
     </div>
 
     <!-- Responsive  Grid -->
-    <h1>Choose You Fav Cupcake Here</h1>
+    <!-- <h1>Choose You Fav Cupcake Here</h1>
     <div id="cupcakes">
       <div class="row">
         <div class="column">
           <img src="images/cake1.jpg" />
-          <img src="images/cake2.jpg" />
-          <!-- <img src="images/cake3.jpg"> -->
-          <!-- <img src="images/cake4.jpg"> -->
-          <!-- <img src="images/cake5.jpg"> -->
-          <!-- <img src="images/cake6.jpeg"> -->
-          <img src="images/cake7.jpeg" />
+          <img src="images/cake2.jpg" /> -->
+    <!-- <img src="images/cake3.jpg"> -->
+    <!-- <img src="images/cake4.jpg"> -->
+    <!-- <img src="images/cake5.jpg"> -->
+    <!-- <img src="images/cake6.jpeg"> -->
+    <!-- <img src="images/cake7.jpeg" />
         </div>
         <div class="column">
           <img src="images/cake2.jpg" />
           <img src="images/cake1.jpg" />
-          <img src="images/cake3.jpg" />
-          <!-- <img src="images/cake5.jpg"> -->
-          <!-- <img src="images/cake7.jpeg"> -->
-          <!-- <img src="images/cake4.jpg"> -->
-          <img src="images/cake6.jpeg" />
+          <img src="images/cake3.jpg" /> -->
+    <!-- <img src="images/cake5.jpg"> -->
+    <!-- <img src="images/cake7.jpeg"> -->
+    <!-- <img src="images/cake4.jpg"> -->
+    <!-- <img src="images/cake6.jpeg" />
         </div>
         <div class="column">
           <img src="images/cake1.jpg" />
-          <img src="images/cake2.jpg" />
-          <!-- <img src="images/cake3.jpg"> -->
-          <!-- <img src="images/cake4.jpg"> -->
-          <!-- <img src="images/cake5.jpg"> -->
-          <!-- <img src="images/cake6.jpeg"> -->
-          <img src="images/cake7.jpeg" />
+          <img src="images/cake2.jpg" /> -->
+    <!-- <img src="images/cake3.jpg"> -->
+    <!-- <img src="images/cake4.jpg"> -->
+    <!-- <img src="images/cake5.jpg"> -->
+    <!-- <img src="images/cake6.jpeg"> -->
+    <!-- <img src="images/cake7.jpeg" />
         </div>
+      </div>
+    </div> -->
+
+    <!-- Grid Images -->
+    <h1>Choose You Fav Cupcake Here</h1>
+    <div class="grid-container">
+      <div class="item1">
+        <img src="images/bg2.jpg" />
+      </div>
+      <div class="item2">
+        <img src="images/cupcake.jpg" />
+      </div>
+      <div class="item3">
+        <img src="images/cake3.jpg" />
+      </div>
+      <div class="item4">
+        <img src="images/cake7.jpeg" />
+      </div>
+      <div class="item5">
+        <img src="images/cake4.jpg" />
+      </div>
+      <div class="item6">
+        <img src="images/cupcake2.jpg" />
       </div>
     </div>
 
     <!-- Our Testimonial -->
     <div id="testimonial">
-      <h1>What They Say About Us</h1>
+      <h1 class="testi">What They Say About Us</h1>
       <div class="row">
         <div class="column">
           <div class="card">
-            <img src="images/male.png" />
-            <h4>Bailey</h4>
-            <p>I love her cupcake so much</p>
+            <div class="container">
+              <img src="images/male.png" class="image-testi" />
+              <div class="overlay">
+                <h4>Drew</h4>
+                <div class="text">I love her cupcake so much</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <img src="images/female.png" />
-            <h4>Zoe</h4>
-            <p>I love the texture of the cupcake</p>
+            <div class="container">
+              <img src="images/female.png" class="image-testi" />
+              <div class="overlay">
+                <h4>Cha</h4>
+                <div class="text">I love te texture of the cupcake</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <img src="images/male2.png" />
-            <h4>Mailes</h4>
-            <p>I and my kids are love it</p>
+            <div class="container">
+              <img src="images/male2.png" class="image-testi" />
+              <div class="overlay">
+                <h4>John</h4>
+                <div class="text">I and my kids are love it</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
-            <img src="images/female2.png" />
-            <h4>Frey</h4>
-            <p>I love the red velvet one</p>
+            <div class="container">
+              <img src="images/female2.png" class="image-testi" />
+              <div class="overlay">
+                <h4>Richies</h4>
+                <div class="text">I love the red velvet one</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -119,7 +170,7 @@
 
     <!-- Contact Section -->
     <div id="contact">
-      <div class="container">
+      <div class="container-contact">
         <div style="text-align: center">
           <h1>Contact Us</h1>
           <p>Join our cupcake baked class</p>
